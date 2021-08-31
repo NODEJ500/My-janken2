@@ -16,22 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ist-eP-3uZ">
-                                <rect key="frame" x="87" y="77" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ist-eP-3uZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="678"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKp-rZ-c6K">
-                                <rect key="frame" x="96" y="480" width="223" height="163"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKp-rZ-c6K">
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="i5Y-cc-Iv1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="じゃんけんをする！">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYk-e0-IMq"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="これからじゃんけんをします！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tS-s0-RGO">
-                                <rect key="frame" x="47" y="334" width="320" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これからじゃんけんをします！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tS-s0-RGO">
+                                <rect key="frame" x="0.0" y="722" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Y6q-Sh-ne2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +45,23 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.3529411764705882" green="0.94901960784313721" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3tS-s0-RGO" firstAttribute="top" secondItem="Ist-eP-3uZ" secondAttribute="bottom" id="3NH-2a-p0Y"/>
+                            <constraint firstItem="wKp-rZ-c6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MiW-Ef-WMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wKp-rZ-c6K" secondAttribute="trailing" id="O3d-gp-w5k"/>
+                            <constraint firstItem="wKp-rZ-c6K" firstAttribute="top" secondItem="3tS-s0-RGO" secondAttribute="bottom" id="OnL-fO-DYo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3tS-s0-RGO" secondAttribute="trailing" id="b8s-pi-ZBu"/>
+                            <constraint firstItem="Ist-eP-3uZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bIf-1C-AUI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ist-eP-3uZ" secondAttribute="trailing" id="fq5-tA-iIM"/>
+                            <constraint firstItem="3tS-s0-RGO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jaB-St-RSg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wKp-rZ-c6K" secondAttribute="bottom" id="zGC-aN-BSL"/>
+                            <constraint firstItem="Ist-eP-3uZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zck-73-niC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerImageView" destination="Ist-eP-3uZ" id="DAH-dQ-X3X"/>
+                        <outlet property="answerLabel" destination="3tS-s0-RGO" id="oYI-CC-QLy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
