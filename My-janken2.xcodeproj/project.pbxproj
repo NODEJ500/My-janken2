@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0BFB2027340CF100FE8038 /* PositiveSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFB1F27340CF100FE8038 /* PositiveSimpleButton.swift */; };
+		BF0BFB2227340E0600FE8038 /* PositiveSimpleButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF0BFB2127340E0600FE8038 /* PositiveSimpleButton.xib */; };
+		BF3712042732C34F00F16BEE /* TanukiMagic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFEB41832732C0F800BD294D /* TanukiMagic.ttf */; };
 		BF69813B26DBA7BD00E6074E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF69813A26DBA7BD00E6074E /* AppDelegate.swift */; };
 		BF69813D26DBA7BD00E6074E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF69813C26DBA7BD00E6074E /* SceneDelegate.swift */; };
 		BF69813F26DBA7BD00E6074E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF69813E26DBA7BD00E6074E /* ViewController.swift */; };
 		BF69814226DBA7BD00E6074E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF69814026DBA7BD00E6074E /* Main.storyboard */; };
 		BF69814426DBA7BE00E6074E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF69814326DBA7BE00E6074E /* Assets.xcassets */; };
 		BF69814726DBA7BE00E6074E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF69814526DBA7BE00E6074E /* LaunchScreen.storyboard */; };
+		BFEB41822732C0EA00BD294D /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = BFEB41812732C0EA00BD294D /* readme.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF0BFB1F27340CF100FE8038 /* PositiveSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveSimpleButton.swift; sourceTree = "<group>"; };
+		BF0BFB2127340E0600FE8038 /* PositiveSimpleButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PositiveSimpleButton.xib; sourceTree = "<group>"; };
 		BF69813726DBA7BD00E6074E /* My-janken2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-janken2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF69813A26DBA7BD00E6074E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF69813C26DBA7BD00E6074E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		BF69814326DBA7BE00E6074E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF69814626DBA7BE00E6074E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF69814826DBA7BE00E6074E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFEB41812732C0EA00BD294D /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		BFEB41832732C0F800BD294D /* TanukiMagic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TanukiMagic.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		BF69813926DBA7BD00E6074E /* My-janken2 */ = {
 			isa = PBXGroup;
 			children = (
+				BFEB41802732C0D000BD294D /* Font */,
 				BF69813A26DBA7BD00E6074E /* AppDelegate.swift */,
 				BF69813C26DBA7BD00E6074E /* SceneDelegate.swift */,
 				BF69813E26DBA7BD00E6074E /* ViewController.swift */,
+				BF0BFB1F27340CF100FE8038 /* PositiveSimpleButton.swift */,
+				BF0BFB2127340E0600FE8038 /* PositiveSimpleButton.xib */,
 				BF69814026DBA7BD00E6074E /* Main.storyboard */,
 				BF69814326DBA7BE00E6074E /* Assets.xcassets */,
 				BF69814526DBA7BE00E6074E /* LaunchScreen.storyboard */,
 				BF69814826DBA7BE00E6074E /* Info.plist */,
 			);
 			path = "My-janken2";
+			sourceTree = "<group>";
+		};
+		BFEB41802732C0D000BD294D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BFEB41832732C0F800BD294D /* TanukiMagic.ttf */,
+				BFEB41812732C0EA00BD294D /* readme.txt */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +144,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3712042732C34F00F16BEE /* TanukiMagic.ttf in Resources */,
 				BF69814726DBA7BE00E6074E /* LaunchScreen.storyboard in Resources */,
 				BF69814426DBA7BE00E6074E /* Assets.xcassets in Resources */,
+				BFEB41822732C0EA00BD294D /* readme.txt in Resources */,
+				BF0BFB2227340E0600FE8038 /* PositiveSimpleButton.xib in Resources */,
 				BF69814226DBA7BD00E6074E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +162,7 @@
 			files = (
 				BF69813F26DBA7BD00E6074E /* ViewController.swift in Sources */,
 				BF69813B26DBA7BD00E6074E /* AppDelegate.swift in Sources */,
+				BF0BFB2027340CF100FE8038 /* PositiveSimpleButton.swift in Sources */,
 				BF69813D26DBA7BD00E6074E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,17 +9,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var buttonLabel: PositiveSimpleButton!
+    
+    let positivesimplebutton = PositiveSimpleButton()
     
     var answerNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
     }
 
     @IBOutlet var answerImageView: UIImageView!
     @IBOutlet weak var answerLabel: UILabel!
     @IBAction func shuffleAction(_ sender: Any) {
         
+       buttonLabel.setTitle("じゃいけん", for: .normal)
+      
+       //buttonLabel.titleLabel?.font = UIFont(name: "TanukiMagic", size: 50)
         
         //新しいじゃんけんの結果を一時的に格納する変数を設ける
         var newAnswerNumber = 0
